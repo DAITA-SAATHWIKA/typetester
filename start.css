@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Helvetica', sans-serif;
+    background-image: url('https://oshid.com/cdn/shop/articles/0XD_0111.jpg?v=1702542745');
+    background-size: cover; /* Make the image cover the entire page */
+    background-position: centre; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #8B4513;
+    font-size: 100px;
+    font-family: 'Roboto', sans-serif; /* Applying the Roboto Bold Italic font */
+    font-style: italic;
+    margin-bottom: 10px; /* Increased margin to increase the distance */
+    margin-top: -85px; /* Adjust this value based on your needs */
+}
+
+button {
+    padding: 20px 40px; /* Increased padding for larger size */
+    font-size: 24px; /* Larger font size */
+    width: 200px; /* Increased width for a bigger button */
+    font-family: 'Helvetica', sans-serif; /* Button font remains Helvetica */
+    background-color: rgb(144, 108, 34);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px; /* Add margin-top to move the button lower if needed */
+}
+
+button:hover {
+    background-color: #B5651D;
+}

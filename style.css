@@ -1,0 +1,217 @@
+body {
+  background-color: #fe9801; /* Fallback color in case image doesn't load */
+  background-image: url('https://i.pinimg.com/236x/1b/63/ab/1b63ab13f3c8ed7f3eb8a06d3ea4a8e0.jpg'); /* Replace with your image path */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repeating */
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors, .accuracy,
+.cpm, .wpm {
+  background-color: #FFEBCD;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 20%;
+  box-shadow: rgb(67, 44, 63) 5px 8px 5px;
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
+.header_text {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.curr_time, .curr_errors,
+.curr_accuracy, .curr_cpm,
+.curr_wpm {
+  font-size: 2.75rem;
+}
+
+.quote {
+  background-color: #DEB887;
+  font-size: 1.5rem;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.input_area {
+  background-color: #D2B48C;
+  height: 80px;
+  width: 40%;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #326765;
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  border: 0px;
+  box-shadow: black 5px 8px 5px;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: rgb(65, 180, 65);
+}
+
+#feedback_text {
+  font-size: 22px;                /* Slightly larger font size */
+  font-weight: bold;              /* Make the text bold */
+  color: #fff;                    /* White text color */
+  background-color: #797979;      /* Green background (success message style) */
+  padding: 15px 20px;             /* Padding around the text */
+  margin-top: 20px;               /* Space between the text and the element above */
+  border-radius: 8px;             /* Rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  text-align: center;             /* Center the text */
+  display: none;                  /* Hidden by default */
+  transition: all 0.3s ease-in-out; /* Smooth transition for visibility changes */
+}
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Main font for the entire body */
+  background-color: #f0f4f8; /* Light background for the page */
+  color: #333; /* Dark text for readability */
+}
+
+/* Feedback Section */
+.feedback {
+  background-color: #fdfdfd; /* Slightly brighter background */
+  border: 1px solid #cfd8dc; /* Softer border color */
+  border-radius: 10px; /* More rounded corners */
+  padding: 20px; /* Increased padding for a more spacious feel */
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+/* Analysis Section */
+.analysis {
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  margin: 20px 0;
+}
+
+.analysis div {
+  margin: 10px 0; /* Vertical margin for spacing */
+}
+
+/* Strengths Styles */
+.analysis .strengths {
+  background-color: #d4edda; /* Light green for strengths */
+  border: 1px solid #c3e6cb;
+  padding: 15px; /* Padding for better readability */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Weaknesses Styles */
+.analysis .weaknesses {
+  background-color: #f8d7da; /* Light red for weaknesses */
+  border: 1px solid #f5c6cb;
+  padding: 15px; /* Padding for better readability */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Paragraph Styles */
+.analysis p {
+  font-size: 2.3em; /* Increased font size for better readability */
+  line-height: 1.5; /* Improved line height for readability */
+  color: #4a4a4a; /* Darker text color */
+}
+
+.analysis strong {
+  font-size: 2.7em; /* Increased font size for emphasis */
+  color: #007BFF; /* Blue color for strong emphasis */
+  display: block; /* Block to separate strong text */
+  margin-bottom: 10px; /* Space below strong text */
+}
+
+/* Icon Styles */
+.analysis .icon {
+  font-size: 2.8em; /* Increased icon size */
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Media Queries for Responsiveness */
+/* General styling for both Strengths and Weaknesses */
+.strengths, .weaknesses {
+  background-color: #f4f4f9; /* Light background color */
+  border-radius: 8px;
+  padding: 15px;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Specific styling for the Strengths section */
+.strengths {
+  border-left: 6px solid #4CAF50; /* Green border for Strengths */
+  color: #4CAF50;
+}
+
+.strengths .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Specific styling for the Weaknesses section */
+.weaknesses {
+  border-left: 6px solid #FF9800; /* Orange border for Weaknesses */
+  color: #FF9800;
+}
+
+.weaknesses .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Styling for the strong text */
+.strengths strong, .weaknesses strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Responsive styling for mobile view */
+@media (max-width: 600px) {
+  .strengths, .weaknesses {
+    padding: 10px;
+    margin: 10px 0;
+  }
+}
+
+
